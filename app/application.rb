@@ -5,7 +5,8 @@ class Application
     
     if Time.now.hour.between?(0..11)
     resp.write "Good Morning!"
-    elsif Time.now.hour.between?(12..)
+    elsif Time.now.hour.between?(12..17)
+    
     resp.finish
   end
 
